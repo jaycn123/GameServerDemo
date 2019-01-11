@@ -59,7 +59,7 @@ void TimerManager::addTimer(uint64_t startTime, Functional fp, int32_t nCount /*
 	{
 		startTime += 86400;
 	}
-	
+
 	Timer timer(fp, nCount, nloop, nInterval);
 
 	m_TimerMap[startTime].push_back(timer);

@@ -11,8 +11,8 @@
 typedef std::function<void()> Functional;
 
 struct Timer
-{ 	
-	Timer(Functional fp, int32_t count, int32_t nloop,int32_t nInterval) : m_fp(fp), m_count(count), m_nLoop(nloop), m_Interval(nInterval)
+{
+	Timer(Functional fp, int32_t count, int32_t nloop, int32_t nInterval) : m_fp(fp), m_count(count), m_nLoop(nloop), m_Interval(nInterval)
 	{
 
 	}
@@ -21,7 +21,7 @@ struct Timer
 	{
 
 	}
-	
+
 	int32_t m_count;
 	Functional m_fp;
 	int32_t m_nLoop;
@@ -47,8 +47,8 @@ public:
 private:
 
 	std::map<uint64_t, std::vector<Timer>>m_TimerMap;
-	
+
 };
 
 
-#endif 
+#endif
