@@ -55,6 +55,7 @@ typedef unsigned short uint16;
 typedef unsigned int uint32;
 typedef unsigned long uint64;
 typedef std::string xstring;
+typedef std::string string;
 
 #ifdef _DEBUG
 #define HEART_BEAT_TIME		600
